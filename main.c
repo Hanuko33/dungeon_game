@@ -243,6 +243,12 @@ void game_logic()
             }
         }
     }
+    if (p.hp<1)
+    {
+        SDL_Quit();
+        printf("You lost!\n");
+        exit(0);
+    }
 }
 int main()
 {
